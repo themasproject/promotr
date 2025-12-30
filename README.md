@@ -17,3 +17,8 @@ Status-quo Spotify playlist pitching software & vendors kinda suck; it's scammy,
 ##### Fraud Dectection
 - Homemade ML fraud detection model
 
+#### MVP
+- Filter for interesting playlists
+- use https://www.artist.tools/ to see if it's botted or not, along with your own manual judgement
+- Pitch manually!
+
