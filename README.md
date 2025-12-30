@@ -1,7 +1,10 @@
 # sinnoh
 
 #### Vision
-Status-quo Spotify playlist pitching software kinda sucks; it's scammy, ridden with bots, and doesn't find playlists your music would actually fit well on. 
+Status-quo Spotify playlist pitching software & vendors kinda suck; it's scammy, ridden with bots, and doesn't find playlists your music would actually fit well on. Sinnoh is a playlist pitching software that:
+- pulls playlists containing contact information from the Spotify API
+- filters for those that are very unlikely to be botted
+- filters for those that are very similar to my original song that's being pitched
 
 #### Value Propositions
 - Playlists are offered highly relevant playlist pitches that their listeners would find compelling
