@@ -26,31 +26,41 @@ headers = {
     'Content-Type': 'application/x-www-form-urlencoded'
 }
 request = urllib.request.Request(token_url, data=data, headers=headers, method='POST')
-
 with urllib.request.urlopen(request) as response:
     result = response.read()
     token_data = json.loads(result.decode('utf-8')) # load the result into a JSON object
     access_token = token_data['access_token']
 
-print(access_token)
-
-# GET Playlist
-playlist_id = '0hirpPpHlxxCmI4m3N8DpE'
-playlist_url = f'https://api.spotify.com/v1/playlists/{playlist_id}'
-
-playlist_headers = {
+# START STREAMING
+# put API query parameters into a dict so I can URL encode them
+headers = {
     'Authorization': f'Bearer {access_token}',
     'Content-Type': 'application/json'
 }
+query_parameters = {
+    "q":"@",
+    "type": "playlist",
+    "limit": 50
+}
+base_url = "https://api.spotify.com/v1/search"
+query_string = urllib.parse.urlencode(query_parameters)
+full_url = f"{base_url}?{query_string}"
 
-playlist_request = urllib.request.Request(playlist_url, headers=playlist_headers)
+# create a Request object which Spotify wants
+req = urllib.request.Request(full_url, headers=headers)
 
 try:
-    with urllib.request.urlopen(playlist_request) as response:
-        result = response.read()
-        playlist_data = json.loads(result.decode('utf-8'))
+    with urllib.request.urlopen(req) as response:
+        result = response.read() # here it's just binary
+        result_dict = json.loads(result.decode('utf-8')) # decoding turns it into json, loads turns it into a dict
 
-    print(playlist_data)
+    # print(result_dict)
+
 
 except urllib.error.HTTPError as e:
     print(f"Error: {e}")
+
+print(result_dict['playlists']['items'])
+
+# only save those with over 100,000 saves
+matches = []
