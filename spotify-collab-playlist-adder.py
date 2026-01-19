@@ -4,6 +4,7 @@ import urllib.parse # for encoding
 import urllib.error # for handling errors
 import base64 # for encoding
 import json
+from pprint import pprint
 
 # credentials
 CLIENT_ID = '94c7b98fe83b4398a60014ae6535ff78'
@@ -53,20 +54,33 @@ try:
     with urllib.request.urlopen(req) as response:
         result = response.read() # here it's just binary
         result_dict = json.loads(result.decode('utf-8')) # decoding turns it into json, loads turns it into a dict
-    # print(result_dict)
+    pprint(result_dict)
 
 
 except urllib.error.HTTPError as e:
     print(f"Error: {e}")
 
 # print the formatted reply
-formatted_json = json.dumps(result_dict, indent=4)
-print(formatted_json)
+# formatted_json = json.dumps(result_dict, indent=4)
+# print(formatted_json[:5000])
 
 # only save those with over 100,000 saves
 matches = []
 
-# for i in result_dict['playlists']['items']:
+
+
+for playlist in result_dict['playlists']['items']:
+    if playlist["collaborative"]:
+        matches.append(playlist)
+
+
+# general idea
+# find all the collaborative playulists, wait until you get 50 of them, batch call API to get the ones that have followers over X and are not fraudulent
+# then add all of your music to it to the top spots
+# I need to recreate all this in the apple music API as well
+
+pprint(matches)
+        
     # here, I need to create a function for the api call so I can stop repeating so much code. then GET playlist
     # need to filter for values that represent LEGTITIMATE playlists. 
     # time on playlist, whether followers of the playulist are bgeing banned or not, etc etc

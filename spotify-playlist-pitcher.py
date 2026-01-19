@@ -66,7 +66,7 @@ print(formatted_json)
 # only save those with over 100,000 saves
 matches = []
 
-for i in result_dict['playlists']['items']:
+# for i in result_dict['playlists']['items']:
     # here, I need to create a function for the api call so I can stop repeating so much code. then GET playlist
     # need to filter for values that represent LEGTITIMATE playlists. 
     # time on playlist, whether followers of the playulist are bgeing banned or not, etc etc
