@@ -1,0 +1,34 @@
+{
+  "locations": [
+    {
+      "id": "eventbrite",
+      "name": "Eventbrite",
+      "type": "api",
+      "category": "concert_listing",
+      "platform": "eventbrite",
+      "target": null,
+      "rules": "Always create or optimize event. Link to external ticket URL if source is not Eventbrite.",
+      "enabled": true
+    },
+    {
+      "id": "bandsintown",
+      "name": "Bandsintown",
+      "type": "api",
+      "category": "concert_listing",
+      "platform": "bandsintown",
+      "target": null,
+      "rules": "Events may require approval before going live unless trusted app_id.",
+      "enabled": true
+    },
+    {
+      "id": "concertsto",
+      "name": "ConcertsTO",
+      "type": "agent",
+      "category": "concert_listing",
+      "platform": "concertsto",
+      "target": "https://concertsto.com/",
+      "rules": "Use 'Add Concerts' button. Agent-based browser automation via Playwright + Claude computer use.",
+      "enabled": true
+    }
+  ]
+}
