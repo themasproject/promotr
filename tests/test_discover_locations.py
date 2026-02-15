@@ -2,7 +2,6 @@ import json
 from unittest.mock import patch, MagicMock
 from src.discover_locations import (
     search_subreddits,
-    fetch_subreddit_rules,
     assess_subreddits,
     build_reddit_location,
 )
