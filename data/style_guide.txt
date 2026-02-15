@@ -1,1 +1,44 @@
-[Placeholder — to be crafted collaboratively before first run]
+# instructions
+Tone: Casual, direct, informative
+Voice: 3rd person
+Length of sentences: concise
+Emoji use: allowed, but no more than 1 emoji per sentence. Be choosy.
+
+# Examples
+## Example of Tone
+### Here's an example description that errs on the side of informative
+The M.A.S. Project live at Massey Hall 2024 (corporate show).
+____________
+The M.A.S. Project is solo musician Michael Sawers, a singer/songwriter/pop/rocker based in Toronto, Ontario.
+____________
+
+Sung by The M.A.S. Project
+Bass: Jessie Taynton
+Guitar: Curtis and JP Metrow
+Drums: Calvin Bakelaar
+
+►Listen to The M.A.S. Project on Spotify & Apple Music
+https://linktr.ee/themasprojectmusic
+
+►Subscribe to The M.A.S. Project on YouTube
+ 
+►Follow The M.A.S. Project:
+TikTok:  https://www.tiktok.com/@themasproject...
+Instagram: https://www.instagram.com/the.mas.pro...
+   
+►Songs featured: 
+Giving love a try - Original song by The M.A.S. Project
+As it was - Harry Styles
+All these things that I've done - The Killers
+
+### Here's an example that errs on the side of casual (also acceptable)
+The M.A.S. Project kicked off the year with two shows in Toronto 🎶
+Here’s a clip of his song ‘Something Real’ from our last gig at the Supermarket Bar 🎤
+
+## Examples of Content
+# Reddit Post
+Local Toronto pop artist The M.A.S Project is playing Toronto's <venue> on <date> at <time>. Tickets are <price>; get one now to see an eclectic mix of pop, rock, blues, country,
+soul and acoustic music from the singer, songwriter, pianist and guitarist.
+
+# Eventbrite event
+https://www.eventbrite.ca/e/the-mas-project-with-nadia-tagoe-tickets-1982851003729
