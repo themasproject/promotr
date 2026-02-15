@@ -29,6 +29,16 @@
       "target": "https://concertsto.com/",
       "rules": "Use 'Add Concerts' button. Agent-based browser automation via Playwright + Claude computer use.",
       "enabled": true
+    },
+    {
+      "id": "musiccrawler",
+      "name": "MusicCrawler",
+      "type": "agent",
+      "category": "concert_listing",
+      "platform": "musiccrawler",
+      "target": "https://musiccrawler.live/",
+      "rules": "Agent-based browser automation via Playwright + Claude computer use. Same process as ConcertsTO.",
+      "enabled": true
     }
   ]
 }
