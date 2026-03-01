@@ -2,6 +2,10 @@
 
 An AI-powered marketing automation pipeline for The M.A.S. Project. Give it a ticket URL and it drafts, reviews, and distributes promotional content across concert listing sites and social media — with a human approval gate before anything gets posted.
 
+
+FUTURE IMPROVEMENTS TO ADD IN
+- INSTAGRAM API --> MAKE A POST ABOUT THE GIG, LET AI DO THE WHOLE THING
+- EXPAND THE WEBSITES YOU POST TO! EXPAND THE --DISCOVER FLAG! 
 ---
 
 ## Overview
